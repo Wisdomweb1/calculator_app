@@ -1,0 +1,65 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282c34;
+    font-family: 'Roboto Mono', monospace; /* Added a cool font */
+}
+
+.app {
+    width: 350px; /* Slightly wider for better display */
+}
+
+.calculator {
+    background: #1e1e1e; /* Darker background for a pro look */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+    height: 100%;
+}
+
+.display {
+    background: #222;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    text-align: right;
+    font-size: 2em;
+    font-weight: bold; /* Bold for emphasis */
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px; /* Added gap for visual separation */
+}
+
+.key {
+    padding: 18px;
+    border: 1px solid #333; /* Darker border */
+    text-align: center;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background 0.3s;
+    color: #fff; /* White text for better contrast */
+}
+
+.key:hover {
+    background: #333; /* Darker hover color */
+}
+
+.key.operator {
+    background: #f9a825; /* Orange for operators */
+}
+
+.key.operator:hover {
+    background: #f57f17; /* Darker orange on hover */
+}
+
+.key.action {
+    background: #e53935; /* Red for actions */
+}
+
+.key.action:hover {
+    background: #c62828; /* Darker red on hover */
+}
